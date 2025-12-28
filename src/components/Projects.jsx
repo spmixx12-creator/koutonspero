@@ -80,13 +80,14 @@ const webDesignImages = [
 
 const motionImages = [
   { type: 'gif', path: '/images/Motion 6.gif' },
-  "/images/@whodatvillain.webp",
-  "/images/Angular Geometry.webp",
-  "/images/téléchargement (17).webp",
-  "/images/téléchargement (18).webp",
-  "/images/téléchargement (19).webp",
-  "/images/téléchargement (24).webp",
-  "/images/téléchargement (26).webp"
+  { type: 'gif', path: '/images/@whodatvillain.gif' },
+  { type: 'gif', path: '/images/Angular Geometry.gif' },
+  { type: 'gif', path: '/images/téléchargement (17).gif' },
+  { type: 'gif', path: '/images/téléchargement (18).gif' },
+  { type: 'gif', path: '/images/téléchargement (19).gif' },
+  { type: 'gif', path: '/images/téléchargement (24).gif' },
+  { type: 'gif', path: '/images/téléchargement (25).gif' },
+  { type: 'gif', path: '/images/téléchargement (26).gif' }
 ];
 
 const categoryData = {
