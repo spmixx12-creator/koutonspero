@@ -217,7 +217,7 @@ const Block04_Skills = () => {
     },
     {
       category: "Development",
-      level: 75,
+      level: 30,
       tools: ["HTML/CSS", "React", "Python", "Vite", "Tailwind"]
     }
   ];
