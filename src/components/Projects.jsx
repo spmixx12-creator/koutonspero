@@ -85,7 +85,6 @@ const motionImages = [
   { type: 'gif', path: '/images/téléchargement (17).gif' },
   { type: 'gif', path: '/images/téléchargement (18).gif' },
   { type: 'gif', path: '/images/téléchargement (19).gif' },
-  { type: 'gif', path: '/images/téléchargement (24).gif' },
   { type: 'gif', path: '/images/téléchargement (25).gif' },
   { type: 'gif', path: '/images/téléchargement (26).gif' }
 ];
