@@ -62,7 +62,6 @@ const brandingImages = [
 ];
 
 const motionDesignImages = [
-  { type: 'gif', path: '/images/Motion 6.gif' },
   { type: 'local-video', path: '/images/Motion Design/videoplayback (2).mp4' },
   { type: 'local-video', path: '/images/Motion Design/videoplayback.mp4' },
   { type: 'local-video', path: '/images/Motion Design/videoplayback (1).mp4' }
@@ -80,12 +79,12 @@ const webDesignImages = [
 ];
 
 const motionImages = [
+  { type: 'gif', path: '/images/Motion 6.gif' },
   "/images/@whodatvillain.webp",
   "/images/Angular Geometry.webp",
   "/images/téléchargement (17).webp",
   "/images/téléchargement (18).webp",
   "/images/téléchargement (19).webp",
-  "/images/téléchargement (20).webp",
   "/images/téléchargement (24).webp",
   "/images/téléchargement (26).webp"
 ];
