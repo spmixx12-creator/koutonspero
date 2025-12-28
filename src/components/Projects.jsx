@@ -62,6 +62,7 @@ const brandingImages = [
 ];
 
 const motionDesignImages = [
+  { type: 'gif', path: '/images/Motion 6.gif' },
   { type: 'local-video', path: '/images/Motion Design/videoplayback (2).mp4' },
   { type: 'local-video', path: '/images/Motion Design/videoplayback.mp4' },
   { type: 'local-video', path: '/images/Motion Design/videoplayback (1).mp4' }
@@ -187,6 +188,7 @@ const CategoryGallery = ({ category, onBack, onNextCategory, setCurrentPage }) =
             {data.images.map((item, idx) => {
               const isYouTube = typeof item === 'object' && item.type === 'video';
               const isLocalVideo = typeof item === 'object' && item.type === 'local-video';
+              const isGif = typeof item === 'object' && item.type === 'gif';
 
               return (
                 <motion.div
@@ -196,7 +198,7 @@ const CategoryGallery = ({ category, onBack, onNextCategory, setCurrentPage }) =
                   viewport={{ once: true }}
                   transition={{ delay: 0.1, duration: 0.5 }}
                   className={`flex-shrink-0 w-full md:snap-center 
-                    ${(isYouTube || isLocalVideo) ? 'aspect-video md:w-[85vw] md:w-[70vw] lg:w-[60vw] md:aspect-auto md:h-full' : 'aspect-auto md:h-full md:w-auto'} 
+                    ${(isYouTube || isLocalVideo || isGif) ? 'aspect-video md:w-[85vw] md:w-[70vw] lg:w-[60vw] md:aspect-auto md:h-full' : 'aspect-auto md:h-full md:w-auto'} 
                     rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 shadow-3xl bg-black/40`}
                 >
                   {isYouTube ? (
@@ -216,6 +218,12 @@ const CategoryGallery = ({ category, onBack, onNextCategory, setCurrentPage }) =
                     >
                       Your browser does not support the video tag.
                     </video>
+                  ) : isGif ? (
+                    <img
+                      src={item.path}
+                      alt={`${category} ${idx + 1}`}
+                      className="w-full h-full object-contain"
+                    />
                   ) : (
                     <img
                       src={item}

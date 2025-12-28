@@ -454,7 +454,7 @@ const About = ({ setCurrentPage }) => {
       {/* Background Image Container */}
       <div className="fixed inset-0 z-0">
         <img
-          src="/images/téléchargement (20).webp"
+          src="/images/Motion 6.gif"
           alt="Background"
           className="w-full h-full object-cover opacity-20 grayscale brightness-[0.3]"
         />
@@ -490,7 +490,7 @@ const About = ({ setCurrentPage }) => {
           to { transform: rotate(360deg); }
         }
       `}} />
-    </div>
+    </div >
   );
 };
 
